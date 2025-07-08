@@ -28,33 +28,20 @@ All code is written in **pure Python**, using `NumPy` and `SciPy` — no Qiskit 
 
 We simulate time evolution under the **1D transverse-field Ising Hamiltonian**:
 
-\\[
+\[
 H = -J \sum_{i} \sigma_i^z \sigma_{i+1}^z - h \sum_i \sigma_i^x
-\\]
+\]
 
 Trotter decomposition allows us to split evolution under non-commuting terms:
 
-\\[
+\[
 e^{-i H \Delta t} \approx e^{-i H_Z \Delta t} e^{-i H_X \Delta t} \quad \text{(1st order)}
-\\]
-\\[
+\]
+\[
 e^{-i H \Delta t} \approx e^{-i H_X \Delta t/2} e^{-i H_Z \Delta t} e^{-i H_X \Delta t/2} \quad \text{(2nd order)}
-\\]
+\]
 
 We track observables like:
 - Average magnetization ⟨σᶻ⟩ per site
 - Fidelity to exact evolution
 
-
-## Requirements
-
-- Python ≥ 3.8  
-- NumPy  
-- SciPy  
-- Matplotlib  
-- JupyterLab or Jupyter Notebook
-
-Install dependencies with:
-
-```bash
-pip install numpy scipy matplotlib notebook
