@@ -28,9 +28,9 @@ All code is written in **pure Python**, using `NumPy` and `SciPy` — no Qiskit 
 
 We simulate time evolution under the **1D transverse-field Ising Hamiltonian**:
 
-\[
+\\[
 H = -J \sum_{i} \sigma_i^z \sigma_{i+1}^z - h \sum_i \sigma_i^x
-\]
+\\]
 
 Trotter decomposition allows us to split evolution under non-commuting terms:
 
