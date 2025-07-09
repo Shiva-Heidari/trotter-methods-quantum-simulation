@@ -78,9 +78,9 @@ $$
 
 | Method           | Formula                                                      | Error per step      |
 |------------------|---------------------------------------------------------------|----------------------|
-| First-Order      | $$ e^{-i A \Delta t} e^{-i B \Delta t} $$                     | $$ \mathcal{O}(\Delta t^2)$$ |
-| Second-Order     | $$ e^{-i A \Delta t/2} e^{-i B \Delta t} e^{-i A \Delta t/2} $$ | $$ \mathcal{O}(\Delta t^3) $$ |
-| Exact            | $$ e^{-i (A + B) \Delta t} $$                                | None (exact)         |
+| First-Order      | \\( e^{-i A \Delta t} e^{-i B \Delta t} \\)                     | \( \mathcal{O}(\Delta t^2) \) |
+| Second-Order     | \( e^{-i A \Delta t/2} e^{-i B \Delta t} e^{-i A \Delta t/2} \) | \( \mathcal{O}(\Delta t^3) \) |
+| Exact            | \( e^{-i (A + B) \Delta t} \)                                 | None (exact)         |
 
 ---
 
